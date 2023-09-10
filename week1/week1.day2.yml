@@ -1,0 +1,59 @@
+Today Agenda:
+
+08:45 to 09:00->Live Quiz
+09:00 to 10:00->Method Signature
+10:00 to 10:30->Object
+10:30 to 10:50->Classroom
+10:50 to 11:10->Break
+11:10 to 12:00->Arrays
+12:00 to 12:30->Classroom
+12:30 to 01:00->Switch Case & Jump statments
+01:00 to 01:10-> Recap
+
+Method signature:
+
+public static void main(String[] args){
+
+}
+
+
+Access Modifier:
+=====================
+
+1.Public
+2.protected
+3.default
+4.private 
+
+Static-constant memory
+
+Return type:
+============
+1.void
+2.data types 
+
+
+Method Name:
+
+*methodname should me start with lower case
+
+Input parameters:
+
+1. 0 args
+2. 1 args
+3. more 1 args
+
+
+normal method :
+
+accessmodifier   returntype methodname() {
+
+} 
+
+public void add(){
+
+}
+
+
+ClassName-> TestLeaf->pascal case
+methodName,variable-> browserName-> camal case
