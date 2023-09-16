@@ -1,0 +1,74 @@
+Todays Agenda:
+    09:00-09:40-Selenium Introdution
+    09:40:10:10-Launch Browser
+    10:10--10:35-Classroom+Break
+    10:35-12:00-Locators
+    12:00-12:30-Classroom
+    12:30-01:00- Select Class(Dropdown)
+    01:00-1:20-Classroom
+
+
+    Selenium:
+    UI-user Interface
+
+    selenium can automate only web application
+
+    w3c-World wide web Consortium
+
+
+    Open DOM:
+    1. right click-> Inspect
+    2. f12 & fn->f12
+    3. more tools-> developer tool or ctrl+shift+i
+
+    <html>->tag name->purple  color
+    id,class,name,action,type->attribute name->Brown color or orange
+    "username"->attribute value->blue color
+    Username->text->black color
+
+
+    Tags
+
+    <a>
+        href with link
+        text
+    </a>
+
+    <from>
+        <div>
+        <username>
+        </username>
+        <password></password>
+    </div>
+    <div>>
+        <number></number>
+        <address></address>
+        </div
+    </from>
+
+    Basic Locators:
+    8
+
+    1.id
+    2.name
+    3.className
+    4.linktext
+    5.partial linktext
+    6.tag name 
+    7.Xpath
+    8.css Selector
+
+
+
+    Syntax:
+
+    driver.findElement(By.locator("value"));
+    eg:
+    driver.findElement(By.id("username"));
+
+
+    findElement -method to locate an element
+    By->Abstract class
+    id or name->Locator
+    value->locator 
+    sendkeys-method to pass values into a text field
