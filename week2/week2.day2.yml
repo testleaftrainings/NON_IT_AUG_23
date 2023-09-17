@@ -1,0 +1,148 @@
+Todays Agenda:
+8:45-9:00-Recap
+9:00-10:20-  Xpath,Basic Xpath
+10:20-10:50-Classroom+Break
+10:50-11:20-Implicitly Wait + webDriver methods
+11:30-12:10-Advanced Xpath
+12:10-12:35-Classroom +Break
+12:35-01:10-Continue Xpath
+01:10-01:15-Recap
+
+
+
+Xpath:
+
+Absolute xpath
+==============
+- long xpath
+it will start with '/'
+eg:/html/body/div[2]/div[2]/div/form/p/input
+
+
+
+Relative Xpath:
+ 2 types
+ 1. basic xpath -5
+ 2.advance xpath-8
+
+- it will start with '//'
+
+syntax:
+//tagname[@attribute='attributevalue']
+
+Basic xpath
+--------------
+5 types of xpath:
+
+1. Atrribute based xpath
+
+syntax
+//tagname[@attr='attr value']
+
+eg://input[@id='username']
+
+
+2.Text based xpath
+syntax
+//tagname[text()='text value']
+
+eg://a[text()='Contacts']
+
+3.Parital Attribute based xpath
+
+syntax
+
+//tagname[contains(@attri,'attri value')]
+
+eg://input[contains(@id,'Name')]
+
+4.Parital Text based xpath
+
+syntax:
+//tagname[contains(text(),'text value')]
+
+eg: //a[contains(text(),'Crea')]
+//a[contains(text(),'CRM')]
+
+5.Collection or index based Xpath
+
+  (//tagname[@attri='attri value'])[index]
+
+  index will start from '1'
+  index value should not go beyond '5'
+
+  eg:(//input[contains(@id,'account')])[4]
+  (//input[@class='inputLogin'])[2]
+
+
+
+
+  Wait:
+
+  selenium wait:
+  1.Implicit wait
+  2.Explicit wait
+
+implicit wait is applicable for all 
+findElement method
+
+
+  Java:
+  Thread.sleep
+  (2000)-2s
+
+Advance Xpath
+1.Parent to child
+
+syntax
+
+basic xpath /tagname of child
+
+//div[@class='nav-search-field ']/input
+
+2.GrandParent to GrandChild
+
+basic xpath  grand parent // tagname of grandchild
+
+(//div[@class='_6lux']//input)[2]
+
+
+3.Child to Parent
+
+basic xpath child/parent::tagname parent
+
+//input[@id='username']/parent::p
+
+4.GrandChild to GrandParent
+
+basic xpath GC /ancestor::tagname GP
+
+//span[contains(text(),'Women')]/ancestor::li
+
+5.Elder sibling to younger sibling
+
+basic xpath ES/following-sibling:: tagname YS
+
+//label[text()='Search Amazon.in']/following-sibling::input
+
+6.Younger sibling to Elder Sibling
+
+basic xpath YS/preceding-sibling::tagname ES
+//span[contains(text(),'Men')]/preceding-sibling::span
+
+7.Elder cousin to younger cousin
+
+EC basic xpath/following::tagname YC
+//input[@id='email']/following::input
+
+8.Younger Cousin to Elder Cousin
+
+YC basic xpath/preceding:: tagname EC
+(//input[@id='pass']/preceding::input)[3]
+
+
+
+Classroom:2
+1.Leaftaps-Find Lead-ID 
+2.SnapDeal-Men's Fashion
+3.Amazon- customer service
