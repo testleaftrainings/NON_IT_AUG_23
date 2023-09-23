@@ -1,0 +1,58 @@
+
+Today Agenda:
+08:45 to 09:00 -> Live Quiz
+09:00 to 10:00 -> OOPs & Inheritance
+10:00 to 10:30 -> Classroom+ break
+10:30 to 11:15 -> Polymorphism
+11:15 to 11:40 -> Classroom+Break
+11:40 to 12:20 -> String
+12:20 to 12:35 -> Classroom
+12:35 to 01:00 -> String
+01:00 to 01:15 -> Classroom
+
+
+OOPS
+======
+
+Object Oriented Programming Language
+
+
+object-> access
+
+Single level Inheritance:
+ one class to another class
+
+ Parent class extends Child class
+
+Multi Level Inheritance:
+
+Gp class extends P class 
+P class extends C class
+
+Polymorphism:
+============
+
+two types
+1.Method overloading /static poly/compile time poly/early binding
+2.method overriding/dynamic poly/run time poly/late ninding
+
+
+overloading -i can have 2 or more same mathods inside the smae class but with different input
+args 
+class{
+
+public void add(){
+
+}
+public void add(){
+
+}
+
+public void add(int a)
+}
+
+
+public void add(int a,int b){
+
+}
+
