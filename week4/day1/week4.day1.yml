@@ -1,0 +1,79 @@
+Today Agenda:
+
+09:00 to 09:45 -> Alert
+09:45 to 10:00 -> ClassRoom
+10:00 to 10:10 -> Break
+10:10 to 11:00 -> Frame
+11:00 to 11:20 -> ClassRoom
+11:20 to 11:30 -> Break
+11:30 to 12:00 -> SET
+12:00 to 12:15 -> ClassRoom
+12:15 to 01:00 -> WindowHandling
+
+
+TargetLoactors:
+alert
+frame
+windowhandling 
+
+
+Alert:
+*warning
+*precaution
+
+example:
+Alarm-7.30
+
+alert or notification dispalyed 
+
+Syntax
+
+driver.swtichTo().alert();
+
+Types
+
+Modal Alert- not inspect
+
+Simple alert - one button (ok or yes)
+Confirm alert- two buttons (ok/cancle or yes/no)
+Prompt alert- 1 text and 2 buttons
+
+
+
+Non-modal alert - it can be inspect
+
+
+Exception:
+1. UnhandledAlertException
+2. NoAlertPresentException
+
+
+
+
+Frame:
+
+example - photo frame 
+
+
+
+SET:
+======
+
+
+list - 2,4,1,5,7,4,7,9,3
+get(6)-7
+
+
+set- 2,4,1,5,7,9,3
+will not use get()
+get(6)-3
+
+implmentation class
+
+hash set
+tree set
+linkedhash set
+
+
+WindowHanlding
+
