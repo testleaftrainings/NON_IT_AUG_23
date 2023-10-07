@@ -1,0 +1,122 @@
+Agenda for Today:
+08:45 to 09:00->Live Quiz
+09:00 to 09:40->TestNG Introduction & convert normal script to TestNG tests 
+09:40 to 10:00->Breakout(15 mins)+Break(5 mins) 
+10:00 to 10:30->Sequential Execution 
+10:30 to 10:50->Breakout(10 mins)+Break(10 mins) 
+10:50 to 11:30-> Parallel Execution 
+11:30 to 11:55->Breakout(15 mins)+Break(10 mins) 
+11:55 to 12:40->TestNG Annotations 
+12:40 to 01:00->Breakout(20 mins) 
+01:00 to 01:10->Recap
+
+
+TestNG
+============
+
+Test-Next Generation(TestNG)
+
+J-Unit ---java
+N-unit ---.Next
+
+TestNG-Execution Framework
+
+Limitation:
+
+1.one by one(1000 UI automated testcase)
+ -time consuming 
+ -manually someone have to present
+
+ *Sequential and Parallel Execution(run more than one testcase at same time)
+
+2.Run for hardCoded data
+
+* Run with different set of data without hardcode value
+
+3.There is no reporting data
+
+* can able get basic status or report for testcase
+
+4.There is no way to filter the testcase to run
+
+* groups-filter
+
+5.There is no way to re-run the failure testcase
+
+*automated re-run
+
+
+Selenium:
+CreateLead,
+Edit lead,
+CreateAcct,
+delete Lead.
+
+
+TestNG: Mall
+CreateLead,
+Edit lead,
+CreateAcct,
+delete Lead.
+
+seq and parallel
+
+
+
+thread-count--> handle number of browser in your system
+
+default value thread -count =2
+max=10
+
+thread-count=5
+
+
+2-browser
+
+testcase-3
+
+<suite thread-count="2" parallel="classes" name="Suite">
+  <test  name="Test">
+    <classes>
+      <class name="week5.day1.CreateLead"/>
+      <class name="week5.day1.DeleteLead"/>
+      <class name="week5.day1.EditLead"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+tests-2
+classes-2
+
+total =4
+
+
+Annotation:
+
+
+* @Test - Mandatory
+* Other annotation are optional
+
+BeforeSuite- Start report(execute only once)
+    beforeTest -connect db,excel sheet
+      beforeClass - common  action (Tc name,desc)
+       beforeMethod-Precondition
+          @Test- Create
+       AfterMethod-PostCondition
+
+       beforeMethod-Precondition
+          @Test- Edit
+       AfterMethod-postCondition
+       
+     after class-stop
+   after test -stop
+after suite   -stop report      
+
+
+
+preCondition- browser,load url,username and password,login
+
+postCondition- close
+
