@@ -1,0 +1,76 @@
+Agenda for Today:
+=================
+   08:45 to 09:00->Recap
+   09:00 to 10:00->TestNG Attributes
+   10:00 to 10:25->Breakout(15 mins)+Break(10 mins)
+   10:25 to 11:15->Parameterization & Cross Browser 
+   11:15 to 11:45->Breakout(20 mins)+Break(10 mins)
+   11:45 to 12:30->Data provider
+   12:30 to 12:50->Breakout(20 mins)
+   12:50 to 01:10->Live Quiz
+
+
+
+   TestNG Attributes:
+
+    *1.priority- default =0
+	 *2.enabled- default =true
+	 *3.invocationCount - default=1 
+	 *4.threadPoolSize- will come along with invocationCount-
+	 * -it can run parallel in class level
+	 *5.dependsonMethods- login-message default-{ }-String of Array
+	 *6.timeOut- 5000,invocation count=3-.
+	 *it will give individually(5000) time for all 3 testcase
+	 *timeOut default=0
+	 *7.invocationtimeout--it will take  for all testcase given with the time 
+	 *default=0
+	 *8.Alwaysrun default= false
+
+
+    ClassRoom:
+create Lead(invocationCount=2)
+edit Lead(enabled=false)
+delete Lead(dependsOnMethods=createLead)
+pass=3
+
+then convert in xml ,form xml run testcase
+
+
+
+Parameterization:
+
+Static parameterization
+
+common data for testcase (values)
+Leads(username,password,url,browser)
+
+step 1 : i need start from xml file
+
+<parameter>---xml file
+parameter -> key='name' and value='name' for static data to be passed in the methods
+
+step 2:
+PSM or baseclass
+@Parameters({"name"})
+
+step 3:
+under precondition create input args for (parameters)
+
+step 4:
+remove hardcode values from testscrpit and pass the input agrs
+---------------------------------------------------------------------------------
+
+Dynamic _Parameter:
+
+company name-testleaf,testleaf,testleaf
+first name-dilip,gokul,vinoth
+last name-kumar,s,s
+
+it see inside testcase 
+@Test 
+public void create(){
+   cname,fname,lname,ph
+}
+
+
+DataProviders
