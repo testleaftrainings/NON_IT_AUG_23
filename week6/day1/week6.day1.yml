@@ -1,0 +1,72 @@
+Todays Agenda:
+=============
+  08:45 - 09:00 -> Recap
+  09:00 - 10:00 -> How to Read Data from Excel
+  10:00 - 10:30 -> Classroom(20mins)+Break(10mins)
+  10:30 - 11:00 -> Integration with TestCase
+  11:00 - 11:25 ->  Classroom(15mins)+Break(10mins)
+  11:25 - 11:50 -> Common Integration
+  11:50 - 12:10 -> Classroom(20mins)
+  12:10 - 01:00 -> Static keyword,Explicit Wait
+
+
+
+How to Read Data from Excel:
+
+Excel : 
+.xlsx- Microsoft Excel Spreadsheets in XML format
+.xls - Microsoft Excel Spreadsheets
+
+step 1: create folder in your project
+
+Step 2: copy the Excel sheet and paste inside that folder
+
+
+its not mandatory need have excel in my system.
+
+________________________________________________________________________
+XSSF-XML SpreadSheet Format
+
+XSSFWorkbook
+XSSFSheet
+XSSFRow
+XSSFCell
+
+
+
+
+
+
+
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.3</version>
+</dependency>
+Integration with TestCase
+=================================
+
+
+Step 1- Declare a String[][] variable in Excel Program with dimensions a rowcount & cellcount
+
+Step2-save data into 2D array by having data[i-1][j]=data1 or cell.getStringCellValue();
+
+step 3- add return statement and change void to return type
+
+step4- keyword static retain &change method name and remove args
+
+createclass
+step 5-call classname.methodname 
+and return type
+
+
+Create lead-excel file
+Edit lead- excel file
+
+No?
