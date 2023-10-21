@@ -1,0 +1,117 @@
+Todays Agenda:
+===============
+   09:00-09:45->POM introduction
+   09:45-10:30->POM Design
+   10:30-11:00->Classroom+break
+   11:00-11:40->parallel execution
+   11:40-12:00->Classroom
+   12:00-12-10-> break
+   12:10-12-40->Parameterize
+   12:40-01:00> classroom
+  
+
+PageObjectModel:
+
+POM-page object model
+
+pom.xml-project object model
+
+POM is framework or not?
+
+Page Object Model-its not framework
+
+what is it?
+
+page object model its Design Pattern to build your framework
+
+POM-Design Pattern
+
+Loginpage
+-username
+-password
+-login
+Homepage
+-crmsfa
+-logout
+MyHomePage
+-leads
+
+
+
+
+
+
+
+POM:
+=====
+ package -4
+ ----------
+ Baseclass-
+ Pages-Login,home,myhome,myleads,createlead,view
+ Testcase
+ Utils
+
+
+
+*if want retain in the same page -keyword 'this'
+return this;
+
+*if want go to nextpage - create new constructor for 'nextpage -class name'
+return new HomePage();
+
+
+
+
+
+
+
+
+
+
+Steps to Implement PageObjectModel:
+==================================
+   1)Create a separate Project for POM
+   2)Add all the dependencies in the pom.xml
+   3)Create 4 packages (base,pages,testcase,utils)
+   4)Inside base package create a PSM
+   5)Inside the BaseClass have preCondition(Load the url) and PostCondition
+   6)Inside the pages package create 6 pages
+      -LoginPage
+	   -WelcomePage or HomePage
+	   -MyHomePage
+	   -MyLeadsPage
+	   -CreateLeadPage
+	   -ViewLeadPage
+   7)Make sure all the pages should extend your PSM
+   8)For each Pages create separate methods and put the codes for each of your action
+   9)Finally add the return statement
+        -If the control stays  in the same page return this and change the return type
+        -If the control moves to another page then add return statement according to it page
+
+Need to stay in same page-use this(keyword)
+connet one page to another need use- return new constructor
+
+Execute in parallel in POM
+        =============================
+        1. to remove static keyword from ProjectSpeficieMethod
+        2. you need create own constructor  all the class ,this.driver=driver
+        3.where you given return new constructor(driver)-need pass the driver inside method
+
+
+Static parameterize:
+under pages:
+*Create Input agrs inside method
+*remove hardcoded values and replace the input agrs
+
+under testcase:
+*In,testcase pass the value for it.
+
+How to Parameterize the data?
+	  1)Create a new package(utils) and copy the ReadExel class from the previous project 
+	  and paste it here
+	  2)Create a data folder and create xcel sheets
+	  3)Declare the ExcelFileName globally in PSM
+	  4)Create a method for @DataProvider and call the ReadExel class
+	  5)Integrate @Test with dataProvider attribute
+	  6)Pass the inputs as arguments in the testcase method level and replace the hardcoded values
+	  7)In the testcase create a method to mention the ExcelFileName and annotate with @BeforeTest
