@@ -1,0 +1,118 @@
+Today Agenda:
+
+09:00 - 10:30-Exception Handling
+10:30 - 10:45-Break
+10:45 - 11:15-Explicit Wait 
+11:15 - 11:30-ClassRoom
+11:30 - 11:40-Break
+11:40 - 12:10-Extent Report
+12:10 - 12:30-ClassRoom
+12:30 - 01:00-Property file(Muiltligual Language)
+
+
+
+Exception:
+
+Error: we cannot handled by programs's logic
+ex: 
+1.outofMemoryError
+2.stackOverflow
+
+
+
+
+Exception:
+
+is an Abnormal event that occurs during program execution.
+
+Two types:
+1.Compile time exception
+2.Run time exception
+
+Compile time :
+syntax mistake
+semicolons
+
+Run time exception:
+selenium 
+
+
+Throw and Throws:
+
+Throw
+--------
+throw is keyword used to explicity throw an exception .
+its user define
+nosuch
+indexoutbound
+
+
+Throws
+---------
+throws its system define
+
+throws keyword is used in the method signature to declare that a method may throw specific types of exceptions
+
+
+
+Wait:
+Java -thread.sleep(3000);it will wait my time limit
+
+selenium- 
+implicity: -use for both findelement and findelements
+
+explicit wait: its based on condition it will wait
+
+
+
+Extent Report:
+is a widely used reporting framework
+
+1.screen shot 
+2.information based testcase
+3.pic,graph and relevant details
+4.stauts pass or fail
+
+step1 :
+set path for the report ExtentHtmlReporter
+step2:
+Create object for ExtentReports
+step3:
+attach the data with physical file (combine step1 and step2)
+step4:
+create testcase and adding details about testcase(tc name,tc desp,category,author)
+step5:
+step level status(fail,pass)
+step6:
+mandatory close report
+flush();
+
+
+
+
+pre-requirement:
+	<dependency>
+	 <groupId>io.github.sukgu</groupId>
+	 <artifactId>automation</artifactId>
+	 <version>0.1.4.1</version>
+	</dependency>
+
+
+
+Url https://dev103115.service-now.com.
+
+ username:admin 
+ password :Xl$C6=jwkY4K
+
+
+
+
+
+
+
+
+
+
+
+
+
