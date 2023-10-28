@@ -1,0 +1,62 @@
+Today Agenda:
+09:00-10:30  Integration POM with Extent Report
+10:30-10:50  Breakout
+10:50-11:00  Break
+11:00-11:30  How read data from Property file
+11:30-11:40  Break
+11:40-01:00  Hybrid Framework,Automation Challenges
+
+
+Extent Report :
+/*
+		 * step1 : set path for the report ExtentHtmlReporter 
+		 * step2: Create object forExtentReports 
+		 * step3: attach the data with physical file (combine step1 andstep2) 
+		 * step4: create testcase and adding details about testcase(tc name,tcdesp,category,author) 
+		 * step5: step level status(fail,pass) 
+		 * step6: mandatory close report flush();
+		 */
+
+
+BF Suite-  
+add extent report step 1 and step 2 and step 3
+
+AF Suite -
+add step 6 
+extent.flush();
+
+BF Class-
+add step 4 and step 5
+
+
+
+
+	//setup the path of the properties file
+				FileInputStream fis=new FileInputStream("src/main/resources/config_Fr.properties");
+
+				//create an object of properties class
+				 pro=new Properties();
+				
+				//load this fis into properties class
+				pro.load(fis);
+
+
+FrameWork:
+Exp 0 to 3 years :
+        com.leafbot.pages
+        com.leafbot.utils
+        com.leafbot.testcase
+        com.leafbot.testng.api.base
+
+
+having exp more than 4 to 7yrs
+        com.leafbot.selenium.api.base
+        com.leafbot.selenium.api.design
+
+
+
+        <dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.2</version>
+		</dependency>
